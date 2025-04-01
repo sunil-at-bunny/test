@@ -10,7 +10,7 @@ const listener = BunnySDK.net.tcp.unstable_new();
 console.log("Listening on: ", BunnySDK.net.tcp.toString(listener));
 BunnySDK.net.http.serve(
   async (req) => {
-    console.log(`[INFO]: ${req.method} - ${req.url}`);
+    console.log(`[INFO]: ${req.method} - ${req.url} idk`);
     await sleep(1);
     return new Response("Hello mom!");
   },
