@@ -12,6 +12,7 @@ BunnySDK.net.http.serve(
   async (req) => {
     console.log(`[INFO]: ${req.method} - ${req.url} idk`);
     await sleep(1);
-    return new Response("Hello mom!");
+    console.log("hey!");
+    return new Response("Hello!");
   },
 );
